@@ -2,6 +2,7 @@ import cv2
 import pytesseract
 from gtts import gTTS
 from playsound import playsound
+import os
 
 # Connects pytesseract(wrapper) to the trained tesseract module
 pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
@@ -110,6 +111,7 @@ def texttospeech():
 
 # Calling character methods
 while True:
+    os.system('cls')
     print("***********************************************")
     print("** 1. Convert the Image to Text              **")
     print("** 2. Output the bounding box with the image **")
