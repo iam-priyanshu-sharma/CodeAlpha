@@ -210,8 +210,7 @@ def texttospeech():
 
 # Calling character methods
 while True:
-    option = input("Which option do you choose (1 - 9): ")
-    print("\n")
+    option = input("Which option do you choose (1 - 7): ")
 
     if option == '1':
         charone()
